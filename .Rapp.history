@@ -1,0 +1,672 @@
+install.packages("ggplot2")
+help(package = "ggplot2")
+install.pachages("KernSmooth")
+install.packages("KernSmooth")
+library(KernSmooth)
+x<-1:4
+y<-2:3
+x+y
+x<- c("a","b","c","d")
+for (i in 1:4){}
+for (i in 1:4){print(x[i])}
+for (i in seq_along(x)){print(x[i])}
+f <- function(x) {#
+        g <- function(y) {#
+                y + z#
+        }#
+        z <- 4#
+        x + g(x)#
+}
+z<-10
+f(3)
+cube <- function(x,n){}
+cube <- function(x,n){ x^3}
+cube(3)
+set.seed(10)#
+x <- rbinom(10, 10, 0.5)#
+e <- rnorm(10, 0, 20)#
+y <- 0.5 + 2 * x + e
+getwd()
+setwd('~/dropbox/coursera/data science certification/getting and cleaning data/Getting and Cleaning Data Programming Assignment')
+getwd()
+activity_labels <- read.table("UCI HAR Dataset/activity_labels.txt", sep = " ")
+activity_labels
+activity_labels <- read.table("UCI HAR Dataset/activity_labels.txt",header = FALSE, sep = " ")
+activity_labels
+features_info <- read.table("UCI HAR Dataset/features_info.txt", header = FALSE, sep = " ")
+features <- read.table("UCI HAR Dataset/features.txt", header = FALSE, sep = " ")
+features
+test_subject <-read.table("UCI HAR Dataset/test/features.txt", header = FALSE, sep = " ")
+test_subject <-read.table("UCI HAR Dataset/test/subject_test.txt", header = FALSE, sep = " ")
+test_subject
+activity_labels <- read.table("./UCI HAR Dataset/activity_labels.txt")[,2]
+activity_labels
+activity_labels <- read.table("./UCI HAR Dataset/activity_labels.txt")
+activity_labels
+activity_labels <- read.table("./UCI HAR Dataset/activity_labels.txt")[,1]
+activity_labels
+activity_labelsfeatures <- read.table("UCI HAR Dataset/features.txt", header = FALSE, sep = " ")[,2]
+features <- read.table("UCI HAR Dataset/features.txt", header = FALSE, sep = " ")[,2]
+features
+extract_features <- grepl("mean|std", features)
+extract_features
+names(X_test) = features
+names(x_test_data) = features
+x_test_data <-read.table("UCI HAR Dataset/test/x_test.txt", header = FALSE, sep = " ")
+test_subject <-read.table("UCI HAR Dataset/test/subject_test.txt", header = FALSE, sep = " ")
+x_test_data <-read.table("UCI HAR Dataset/test/x_test.txt", header = FALSE, sep = " ")
+x_test_data <-read.table("UCI HAR Dataset/test/X_test.txt", header = FALSE, sep = " ")
+x_test_data <-read.table("UCI HAR Dataset/test/X_test.txt", header = FALSE, sep = " ")
+x_test_data <-read.table("UCI HAR Dataset/test/X_test.txt", sep = " ")
+x_test_data <-read.table("UCI HAR Dataset/test/X_test.txt", sep = " ")
+x_test_data <-read.table("UCI HAR Dataset/test/X_test.txt", sep = " ")
+x_test_data <-read.table("UCI HAR Dataset/test/X_test.txt")
+x_test_data
+clr
+clear
+ctivity_labels <- read.table("UCI HAR Dataset/activity_labels.txt", header = FALSE, sep = " ")[,2]#
+features <- read.table("UCI HAR Dataset/features.txt", header = FALSE, sep = " ")[,2]
+activity_labels <- read.table("UCI HAR Dataset/activity_labels.txt", header = FALSE, sep = " ")[,2]
+activity_labels
+features <- read.table("UCI HAR Dataset/features.txt", header = FALSE, sep = " ")[,2]
+features
+test_subject <-read.table("UCI HAR Dataset/test/subject_test.txt", header = FALSE, sep = " ")
+x_test_data <-read.table("UCI HAR Dataset/test/X_test.txt")
+y_test_data <-read.table("UCI HAR Dataset/test/Y_test.txt")
+names(X_test) = features
+names(x_test_data) = features
+test_data <- cbind(as.data.table(test_subject), y_test_data, x_test_data)
+test_subject <-read.table("UCI HAR Dataset/test/subject_test.txt", header = FALSE, sep = " ",col.names = "subject")
+test_subject
+x_test_data <-read.table("UCI HAR Dataset/test/X_test.txt", col.names = features)
+x_test_data <-read.table("UCI HAR Dataset/test/X_test.txt", col.names = features)
+x_test_data
+test_subject <-read.table("UCI HAR Dataset/test/subject_test.txt", header = FALSE, sep = " ",col.names = "subject")
+x_test_data <-read.table("UCI HAR Dataset/test/X_test.txt", col.names = features)
+y_test_data <-read.table("UCI HAR Dataset/test/Y_test.txt",col.names = "labelcode")
+test_data <- cbind(test_subject, y_test_data, X_test_data)
+test_data <- cbind(test_subject, y_test_data, x_test_data)
+test_data
+activity_labels <- read.table("UCI HAR Dataset/activity_labels.txt", header = FALSE, sep = " ")[,2]#
+features <- read.table("UCI HAR Dataset/features.txt", header = FALSE, sep = " ")[,2]#
+#
+test_subject <-read.table("UCI HAR Dataset/test/subject_test.txt", header = FALSE, sep = " ",col.names = "subject")#
+x_test_data <-read.table("UCI HAR Dataset/test/X_test.txt", col.names = features)#
+y_test_data <-read.table("UCI HAR Dataset/test/Y_test.txt",col.names = "labelcode")#
+#
+train_subject <-read.table("UCI HAR Dataset/train/subject_train.txt", header = FALSE, sep = " ",col.names = "subject")#
+x_train_data <-read.table("UCI HAR Dataset/train/x_train.txt", col.names = features)#
+y_train_data <-read.table("UCI HAR Dataset/train/y_train.txt",col.names = "labelcode")
+test_data <- cbind(test_subject, y_test_data, x_test_data)#
+trainingdata<-cbind(train_subject,x_train_data,y_train_data)
+trainingdata
+extract_features <- grepl("mean|std", features)
+extract_features
+test_data = test_data[,extract_features]
+test_data
+extract_features <- grepl("mean|std", features)#
+test_data = test_data[,extract_features]
+exract_features
+extract_features
+test_data = test_data[,extract_features]
+test_data <- test_data[,extract_features]
+test_data <- test_data[,extract_features]
+extract_features <- grep("mean\\(|std\\(", features[,2])
+extract_features <- grep("mean|std", features)
+test_data <- test_data[,extract_features]
+extract_features <- grep("mean|std", features)
+x_train_data <- x_train_data[,extract_features]
+x_train_data
+# You should create one R script called run_analysis.R that does the following. #
+#
+# 3. Uses descriptive activity names to name the activities in the data set#
+# 4. Appropriately labels the data set with descriptive variable names.#
+activity_labels <- read.table("UCI HAR Dataset/activity_labels.txt", header = FALSE, sep = " ")[,2]#
+features <- read.table("UCI HAR Dataset/features.txt", header = FALSE, sep = " ")[,2]#
+#
+test_subject <-read.table("UCI HAR Dataset/test/subject_test.txt", header = FALSE, sep = " ",col.names = "subject")#
+x_test_data <-read.table("UCI HAR Dataset/test/X_test.txt", col.names = features)#
+y_test_data <-read.table("UCI HAR Dataset/test/Y_test.txt",col.names = "labelcode")#
+#
+train_subject <-read.table("UCI HAR Dataset/train/subject_train.txt", header = FALSE, sep = " ",col.names = "subject")#
+x_train_data <-read.table("UCI HAR Dataset/train/x_train.txt", col.names = features)#
+y_train_data <-read.table("UCI HAR Dataset/train/y_train.txt",col.names = "labelcode")#
+#
+# 2. Extracts only the measurements on the mean and standard deviation for each measurement. #
+extract_features <- grep("mean|std", features)#
+x_test_data <- x_test_data[,extract_features]#
+x_train_data <- x_train_data[,extract_features]#
+#
+# 1. Merges the training and the test sets to create one data set.#
+test_data <- cbind(test_subject, y_test_data, x_test_data)#
+training_data<-cbind(train_subject,y_train_data,x_train_data)#
+data = rbind(test_data, training_data)#
+#
+# 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.#
+id_labels   = c("subject", "Activity_ID", "Activity_Label")#
+data_labels = setdiff(colnames(data), id_labels)#
+melt_data      = melt(data, id = id_labels, measure.vars = data_labels)#
+tidy_data   = dcast(melt_data, subject + Activity_Label ~ variable, mean)#
+write.table(tidy_data, file = "./tidy_data.txt")
+# You should create one R script called run_analysis.R that does the following. #
+## load libraries#
+library(plyr)#
+library(reshape2)#
+#
+# 3. Uses descriptive activity names to name the activities in the data set#
+# 4. Appropriately labels the data set with descriptive variable names.#
+activity_labels <- read.table("UCI HAR Dataset/activity_labels.txt", header = FALSE, sep = " ")[,2]#
+features <- read.table("UCI HAR Dataset/features.txt", header = FALSE, sep = " ")[,2]#
+#
+test_subject <-read.table("UCI HAR Dataset/test/subject_test.txt", header = FALSE, sep = " ",col.names = "subject")#
+x_test_data <-read.table("UCI HAR Dataset/test/X_test.txt", col.names = features)#
+y_test_data <-read.table("UCI HAR Dataset/test/Y_test.txt",col.names = "labelcode")#
+#
+train_subject <-read.table("UCI HAR Dataset/train/subject_train.txt", header = FALSE, sep = " ",col.names = "subject")#
+x_train_data <-read.table("UCI HAR Dataset/train/x_train.txt", col.names = features)#
+y_train_data <-read.table("UCI HAR Dataset/train/y_train.txt",col.names = "labelcode")#
+#
+# 2. Extracts only the measurements on the mean and standard deviation for each measurement. #
+extract_features <- grep("mean|std", features)#
+x_test_data <- x_test_data[,extract_features]#
+x_train_data <- x_train_data[,extract_features]#
+#
+# 1. Merges the training and the test sets to create one data set.#
+test_data <- cbind(test_subject, y_test_data, x_test_data)#
+training_data<-cbind(train_subject,y_train_data,x_train_data)#
+data = rbind(test_data, training_data)#
+#
+# 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.#
+id_labels = c("subject", "Activity_ID", "Activity_Label")#
+data_labels = setdiff(colnames(data), id_labels)#
+melt_data = melt(data, id = id_labels, measure.vars = data_labels)#
+tidy_data = dcast(melt_data, subject + Activity_Label ~ variable, mean)#
+write.table(tidy_data, file = "./tidy_data.txt")
+id_lables
+ie_labels
+id_labels
+data_labels
+# You should create one R script called run_analysis.R that does the following. #
+## load libraries#
+library(plyr)#
+library(reshape2)#
+#
+# 3. Uses descriptive activity names to name the activities in the data set#
+# 4. Appropriately labels the data set with descriptive variable names.#
+activity_labels <- read.table("UCI HAR Dataset/activity_labels.txt", header = FALSE, sep = " ")[,2]#
+features <- read.table("UCI HAR Dataset/features.txt", header = FALSE, sep = " ")[,2]#
+#
+test_subject <-read.table("UCI HAR Dataset/test/subject_test.txt", header = FALSE, sep = " ",col.names = "subject")#
+x_test_data <-read.table("UCI HAR Dataset/test/X_test.txt", col.names = features)#
+y_test_data <-read.table("UCI HAR Dataset/test/Y_test.txt",col.names = "labelcode")#
+names(x_test_data) = features
+extract_features <- grep("mean|std", features)#
+x_test_data <- x_test_data[,extract_features]
+library(plyr)#
+library(reshape2)#
+#
+# 3. Uses descriptive activity names to name the activities in the data set#
+# 4. Appropriately labels the data set with descriptive variable names.#
+activity_labels <- read.table("UCI HAR Dataset/activity_labels.txt", header = FALSE, sep = " ")[,2]#
+features <- read.table("UCI HAR Dataset/features.txt", header = FALSE, sep = " ")[,2]#
+#
+test_subject <-read.table("UCI HAR Dataset/test/subject_test.txt", header = FALSE, sep = " ",col.names = "subject")#
+x_test_data <-read.table("UCI HAR Dataset/test/X_test.txt", col.names = features)#
+y_test_data <-read.table("UCI HAR Dataset/test/Y_test.txt",col.names = "labelcode")#
+#
+extract_features <- grep("mean|std", features)#
+x_test_data <- x_test_data[,extract_features]#
+#
+train_subject <-read.table("UCI HAR Dataset/train/subject_train.txt", header = FALSE, sep = " ",col.names = "subject")#
+x_train_data <-read.table("UCI HAR Dataset/train/x_train.txt", col.names = features)#
+y_train_data <-read.table("UCI HAR Dataset/train/y_train.txt",col.names = "labelcode")#
+#
+x_train_data <- x_train_data[,extract_features]
+# You should create one R script called run_analysis.R that does the following. #
+## load libraries#
+library(plyr)#
+library(reshape2)#
+#
+# 3. Uses descriptive activity names to name the activities in the data set#
+# 4. Appropriately labels the data set with descriptive variable names.#
+activity_labels <- read.table("UCI HAR Dataset/activity_labels.txt", header = FALSE, sep = " ")[,2]#
+features <- read.table("UCI HAR Dataset/features.txt", header = FALSE, sep = " ")[,2]#
+#
+test_subject <-read.table("UCI HAR Dataset/test/subject_test.txt", header = FALSE, sep = " ",col.names = "subject")#
+x_test_data <-read.table("UCI HAR Dataset/test/X_test.txt", col.names = features)#
+y_test_data <-read.table("UCI HAR Dataset/test/Y_test.txt",col.names = "labelcode")#
+#
+train_subject <-read.table("UCI HAR Dataset/train/subject_train.txt", header = FALSE, sep = " ",col.names = "subject")#
+x_train_data <-read.table("UCI HAR Dataset/train/x_train.txt", col.names = features)#
+y_train_data <-read.table("UCI HAR Dataset/train/y_train.txt",col.names = "labelcode")#
+#
+# 2. Extracts only the measurements on the mean and standard deviation for each measurement. #
+extract_features <- grep("mean|std", features)#
+x_test_data <- x_test_data[,extract_features]#
+x_train_data <- x_train_data[,extract_features]#
+#
+# 1. Merges the training and the test sets to create one data set.#
+test_data <- cbind(test_subject, y_test_data, x_test_data)#
+training_data<-cbind(train_subject,y_train_data,x_train_data)#
+data = rbind(test_data, training_data)
+head(test_data)
+labels(x_train_data)
+features
+labels(train_subject)
+labels(x_train_data)
+x_train_data
+y_train_data
+# You should create one R script called run_analysis.R that does the following. #
+## load libraries#
+library(plyr)#
+library(reshape2)#
+#
+# 3. Uses descriptive activity names to name the activities in the data set#
+# 4. Appropriately labels the data set with descriptive variable names.#
+activity_labels <- read.table("UCI HAR Dataset/activity_labels.txt", header = FALSE, sep = " ")[,2]#
+features <- read.table("UCI HAR Dataset/features.txt", header = FALSE, sep = " ")[,2]#
+#
+test_subject <-read.table("UCI HAR Dataset/test/subject_test.txt", header = FALSE, sep = " ",col.names = "subject")#
+x_test_data <-read.table("UCI HAR Dataset/test/X_test.txt", col.names = features)#
+y_test_data <-read.table("UCI HAR Dataset/test/Y_test.txt",col.names = "labelcode")#
+#
+train_subject <-read.table("UCI HAR Dataset/train/subject_train.txt", header = FALSE, sep = " ",col.names = "subject")#
+x_train_data <-read.table("UCI HAR Dataset/train/x_train.txt", col.names = features)#
+y_train_data <-read.table("UCI HAR Dataset/train/y_train.txt",col.names = "labelcode")#
+#
+# 2. Extracts only the measurements on the mean and standard deviation for each measurement. #
+extract_features <- grep("mean|std", features)#
+x_test_data <- x_test_data[,extract_features]#
+x_train_data <- x_train_data[,extract_features]#
+#
+# 1. Merges the training and the test sets to create one data set.#
+test_data <- cbind(test_subject, y_test_data, x_test_data)#
+training_data<-cbind(train_subject,y_train_data,x_train_data)#
+data = rbind(test_data, training_data)#
+#
+# 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.#
+id_labels = c("subject", "Activity_ID", "Activity_Label")#
+data_labels = setdiff(colnames(data), id_labels)#
+melt_data = melt(data, id = id_labels, measure.vars = data_labels)#
+tidy_data = dcast(melt_data, subject + labelcode ~ variable, mean)#
+write.table(tidy_data, file = "./tidy_data.txt")
+y_test_data <-read.table("UCI HAR Dataset/test/Y_test.txt",col.names = c("Activity_ID", "Activity_Label"))
+y_test_data <-read.table("UCI HAR Dataset/test/Y_test.txt",col.names = "Activity_ID", "Activity_Label")
+x_test_data <-read.table("UCI HAR Dataset/test/X_test.txt", col.names = features)
+x_test_data
+extract_features <- grep("mean|std", features)
+extract_features
+extract_features <- grepl("mean|std", features)
+extract_features
+x_test_data <- x_test_data[,extract_features]
+x_test_data
+## Create one R script called run_analysis.R that does the following:#
+## 1. Merges the training and the test sets to create one data set.#
+## 2. Extracts only the measurements on the mean and standard deviation for each measurement.#
+## 3. Uses descriptive activity names to name the activities in the data set#
+## 4. Appropriately labels the data set with descriptive activity names.#
+## 5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject.#
+#
+if (!require("data.table")) {#
+  install.packages("data.table")#
+}#
+#
+if (!require("reshape2")) {#
+  install.packages("reshape2")#
+}#
+#
+require("data.table")#
+require("reshape2")#
+#
+# Load: activity labels#
+activity_labels <- read.table("./UCI HAR Dataset/activity_labels.txt")[,2]#
+#
+# Load: data column names#
+features <- read.table("./UCI HAR Dataset/features.txt")[,2]#
+#
+# Extract only the measurements on the mean and standard deviation for each measurement.#
+extract_features <- grepl("mean|std", features)#
+#
+# Load and process X_test & y_test data.#
+X_test <- read.table("./UCI HAR Dataset/test/X_test.txt")#
+y_test <- read.table("./UCI HAR Dataset/test/y_test.txt")#
+subject_test <- read.table("./UCI HAR Dataset/test/subject_test.txt")#
+#
+names(X_test) = features#
+#
+# Extract only the measurements on the mean and standard deviation for each measurement.#
+X_test = X_test[,extract_features]
+X_test
+y_test[,2] = activity_labels[y_test[,1]]
+y_test
+# You should create one R script called run_analysis.R that does the following. #
+## load libraries#
+library(plyr)#
+library(reshape2)#
+#
+# 3. Uses descriptive activity names to name the activities in the data set#
+# 4. Appropriately labels the data set with descriptive variable names.#
+activity_labels <- read.table("UCI HAR Dataset/activity_labels.txt", header = FALSE, sep = " ")[,2]#
+features <- read.table("UCI HAR Dataset/features.txt", header = FALSE, sep = " ")[,2]#
+#
+test_subject <-read.table("UCI HAR Dataset/test/subject_test.txt", header = FALSE, sep = " ",col.names = "subject")#
+x_test_data <-read.table("UCI HAR Dataset/test/X_test.txt", col.names = features)#
+y_test_data <-read.table("UCI HAR Dataset/test/Y_test.txt",col.names = "labelcode")
+y_test_data
+library(plyr)#
+library(reshape2)#
+#
+# 3. Uses descriptive activity names to name the activities in the data set#
+# 4. Appropriately labels the data set with descriptive variable names.#
+activity_labels <- read.table("UCI HAR Dataset/activity_labels.txt", header = FALSE, sep = " ")[,2]#
+features <- read.table("UCI HAR Dataset/features.txt", header = FALSE, sep = " ")[,2]#
+#
+test_subject <-read.table("UCI HAR Dataset/test/subject_test.txt", header = FALSE, sep = " ",col.names = "subject")#
+x_test_data <-read.table("UCI HAR Dataset/test/X_test.txt", col.names = features)#
+y_test_data <-read.table("UCI HAR Dataset/test/Y_test.txt",col.names = "labelcode")#
+y_test_data[,2] = activity_labels[y_test[,1]]
+y_test_data
+library(plyr)#
+library(reshape2)#
+#
+activity_labels <- read.table("UCI HAR Dataset/activity_labels.txt", header = FALSE, sep = " ")[,2]#
+features <- read.table("UCI HAR Dataset/features.txt", header = FALSE, sep = " ")[,2]#
+#
+test_subject <-read.table("UCI HAR Dataset/test/subject_test.txt", header = FALSE, sep = " ",col.names = "subject")#
+x_test_data <-read.table("UCI HAR Dataset/test/X_test.txt", col.names = features)#
+y_test_data <-read.table("UCI HAR Dataset/test/Y_test.txt",col.names = "labelcode")#
+#
+y_test_data[,2] = activity_labels[y_test[,1]]
+y_test_data[,2] = activity_labels[y_test_data[,1]]
+y_test_data
+library(plyr)#
+library(reshape2)#
+#
+activity_labels <- read.table("UCI HAR Dataset/activity_labels.txt", header = FALSE, sep = " ")[,2]#
+features <- read.table("UCI HAR Dataset/features.txt", header = FALSE, sep = " ")[,2]#
+#
+test_subject <-read.table("UCI HAR Dataset/test/subject_test.txt", header = FALSE, sep = " ",col.names = "subject")#
+x_test_data <-read.table("UCI HAR Dataset/test/X_test.txt", col.names = features)#
+y_test_data <-read.table("UCI HAR Dataset/test/Y_test.txt")#
+#
+y_test_data[,2] = activity_labels[y_test_data[,1]]#
+names(y_test) = c("Activity_ID", "Activity_Label")
+names(y_test_data) = c("Activity_ID", "Activity_Label")
+y_test_data
+library(plyr)#
+library(reshape2)#
+#
+activity_labels <- read.table("UCI HAR Dataset/activity_labels.txt", header = FALSE, sep = " ")[,2]#
+features <- read.table("UCI HAR Dataset/features.txt", header = FALSE, sep = " ")[,2]#
+#
+test_subject <-read.table("UCI HAR Dataset/test/subject_test.txt", header = FALSE, sep = " ",col.names = "subject")#
+x_test_data <-read.table("UCI HAR Dataset/test/X_test.txt", col.names = features)#
+y_test_data <-read.table("UCI HAR Dataset/test/Y_test.txt")#
+y_test_data[,2] = activity_labels[y_test_data[,1]]#
+names(y_test_data) = c("Activity_ID", "Activity_Label")#
+#
+train_subject <-read.table("UCI HAR Dataset/train/subject_train.txt", header = FALSE, sep = " ",col.names = "subject")#
+x_train_data <-read.table("UCI HAR Dataset/train/x_train.txt", col.names = features)#
+y_train_data <-read.table("UCI HAR Dataset/train/y_train.txt")#
+y_train_data[,2] = activity_labels[y_train_data[,1]]#
+names(y_train_data) = c("Activity_ID", "Activity_Label")#
+extract_features <- grepl("mean|std", features)#
+x_test_data <- x_test_data[,extract_features]#
+x_train_data <- x_train_data[,extract_features]#
+#
+test_data <- cbind(test_subject, y_test_data, x_test_data)#
+training_data<-cbind(train_subject,y_train_data,x_train_data)#
+data = rbind(test_data, training_data)
+data
+id_labels = c("subject", "Activity_ID", "labelcode")#
+data_labels = setdiff(colnames(data), id_labels)#
+melt_data = melt(data, id = id_labels, measure.vars = data_labels)#
+tidy_data = dcast(melt_data, subject + labelcode ~ variable, mean)#
+write.table(tidy_data, file = "./tidy_data.txt")
+if (!require("data.table")) {#
+  install.packages("data.table")#
+}#
+#
+if (!require("reshape2")) {#
+  install.packages("reshape2")#
+}#
+#
+require("data.table")#
+require("reshape2")#
+#
+# Load: activity labels#
+activity_labels <- read.table("./UCI HAR Dataset/activity_labels.txt")[,2]#
+#
+# Load: data column names#
+features <- read.table("./UCI HAR Dataset/features.txt")[,2]#
+#
+# Extract only the measurements on the mean and standard deviation for each measurement.#
+extract_features <- grepl("mean|std", features)#
+#
+# Load and process X_test & y_test data.#
+X_test <- read.table("./UCI HAR Dataset/test/X_test.txt")#
+y_test <- read.table("./UCI HAR Dataset/test/y_test.txt")#
+subject_test <- read.table("./UCI HAR Dataset/test/subject_test.txt")#
+#
+names(X_test) = features#
+#
+# Extract only the measurements on the mean and standard deviation for each measurement.#
+X_test = X_test[,extract_features]#
+#
+# Load activity labels#
+y_test[,2] = activity_labels[y_test[,1]]#
+names(y_test) = c("Activity_ID", "Activity_Label")#
+names(subject_test) = "subject"#
+#
+# Bind data#
+test_data <- cbind(as.data.table(subject_test), y_test, X_test)#
+#
+# Load and process X_train & y_train data.#
+X_train <- read.table("./UCI HAR Dataset/train/X_train.txt")#
+y_train <- read.table("./UCI HAR Dataset/train/y_train.txt")#
+#
+subject_train <- read.table("./UCI HAR Dataset/train/subject_train.txt")#
+#
+names(X_train) = features#
+#
+# Extract only the measurements on the mean and standard deviation for each measurement.#
+X_train = X_train[,extract_features]#
+#
+# Load activity data#
+y_train[,2] = activity_labels[y_train[,1]]#
+names(y_train) = c("Activity_ID", "Activity_Label")#
+names(subject_train) = "subject"#
+#
+# Bind data#
+train_data <- cbind(as.data.table(subject_train), y_train, X_train)#
+#
+# Merge test and train data#
+data = rbind(test_data, train_data)#
+#
+id_labels   = c("subject", "Activity_ID", "Activity_Label")#
+data_labels = setdiff(colnames(data), id_labels)#
+melt_data      = melt(data, id = id_labels, measure.vars = data_labels)#
+#
+# Apply mean function to dataset using dcast function#
+tidy_data   = dcast(melt_data, subject + Activity_Label ~ variable, mean)#
+#
+write.table(tidy_data, file = "./tidy_data.txt")
+train_data
+x_train
+X_train
+library(plyr)#
+library(reshape2)#
+#
+activity_labels <- read.table("UCI HAR Dataset/activity_labels.txt", header = FALSE, sep = " ")[,2]#
+features <- read.table("UCI HAR Dataset/features.txt", header = FALSE, sep = " ")[,2]#
+#
+test_subject <-read.table("UCI HAR Dataset/test/subject_test.txt", header = FALSE, sep = " ",col.names = "subject")#
+x_test_data <-read.table("UCI HAR Dataset/test/X_test.txt", col.names = features)#
+y_test_data <-read.table("UCI HAR Dataset/test/Y_test.txt")#
+y_test_data[,2] = activity_labels[y_test_data[,1]]#
+names(y_test_data) = c("Activity_ID", "Activity_Label")#
+test_data <- cbind(as.data.table(subject_test), y_test, X_test)
+test_data <- cbind(subject_test, y_test, X_test)
+test_data <- cbind(as.data.table(test_subject), y_test, X_test)
+test_data <- cbind(as.data.table(test_subject), y_test_data, X_test_data)
+test_data <- cbind(as.data.table(test_subject), y_test_data, x_test_data)
+test_data
+# You should create one R script called run_analysis.R that does the following. #
+## load libraries#
+library(plyr)#
+library(reshape2)#
+#
+extract_features <- grepl("mean|std", features)#
+#
+activity_labels <- read.table("UCI HAR Dataset/activity_labels.txt", header = FALSE, sep = " ")[,2]#
+features <- read.table("UCI HAR Dataset/features.txt", header = FALSE, sep = " ")[,2]#
+#
+test_subject <-read.table("UCI HAR Dataset/test/subject_test.txt", header = FALSE, sep = " ",col.names = "subject")#
+x_test_data <-read.table("UCI HAR Dataset/test/X_test.txt", col.names = features)#
+x_test_data <- x_test_data[,extract_features]#
+y_test_data <-read.table("UCI HAR Dataset/test/Y_test.txt")#
+y_test_data[,2] = activity_labels[y_test_data[,1]]#
+names(y_test_data) = c("Activity_ID", "Activity_Label")#
+test_data <- cbind(as.data.table(test_subject), y_test_data, x_test_data)#
+#
+train_subject <-read.table("UCI HAR Dataset/train/subject_train.txt", header = FALSE, sep = " ",col.names = "subject")#
+x_train_data <-read.table("UCI HAR Dataset/train/x_train.txt", col.names = features)#
+x_train_data <- x_train_data[,extract_features]#
+y_train_data <-read.table("UCI HAR Dataset/train/y_train.txt")#
+y_train_data[,2] = activity_labels[y_train_data[,1]]#
+names(y_train_data) = c("Activity_ID", "Activity_Label")#
+train_data <- cbind(as.data.table(train_subject), y_train_data, x_train_data)#
+data = rbind(test_data, training_data)#
+#
+id_labels = c("subject", "Activity_ID", "labelcode")#
+data_labels = setdiff(colnames(data), id_labels)#
+melt_data = melt(data, id = id_labels, measure.vars = data_labels)#
+tidy_data = dcast(melt_data, subject + labelcode ~ variable, mean)#
+write.table(tidy_data, file = "./tidy_data.txt")
+# You should create one R script called run_analysis.R that does the following. #
+## load libraries#
+library(plyr)#
+library(reshape2)#
+#
+activity_labels <- read.table("UCI HAR Dataset/activity_labels.txt", header = FALSE, sep = " ")[,2]#
+features <- read.table("UCI HAR Dataset/features.txt", header = FALSE, sep = " ")[,2]#
+#
+extract_features <- grepl("mean|std", features)#
+#
+test_subject <-read.table("UCI HAR Dataset/test/subject_test.txt", header = FALSE, sep = " ",col.names = "subject")#
+x_test_data <-read.table("UCI HAR Dataset/test/X_test.txt", col.names = features)#
+x_test_data <- x_test_data[,extract_features]#
+y_test_data <-read.table("UCI HAR Dataset/test/Y_test.txt")#
+y_test_data[,2] = activity_labels[y_test_data[,1]]#
+names(y_test_data) = c("Activity_ID", "Activity_Label")#
+test_data <- cbind(as.data.table(test_subject), y_test_data, x_test_data)#
+#
+train_subject <-read.table("UCI HAR Dataset/train/subject_train.txt", header = FALSE, sep = " ",col.names = "subject")#
+x_train_data <-read.table("UCI HAR Dataset/train/x_train.txt", col.names = features)#
+x_train_data <- x_train_data[,extract_features]#
+y_train_data <-read.table("UCI HAR Dataset/train/y_train.txt")#
+y_train_data[,2] = activity_labels[y_train_data[,1]]#
+names(y_train_data) = c("Activity_ID", "Activity_Label")#
+train_data <- cbind(as.data.table(train_subject), y_train_data, x_train_data)#
+data = rbind(test_data, training_data)#
+#
+id_labels = c("subject", "Activity_ID", "labelcode")#
+data_labels = setdiff(colnames(data), id_labels)#
+melt_data = melt(data, id = id_labels, measure.vars = data_labels)#
+tidy_data = dcast(melt_data, subject + labelcode ~ variable, mean)#
+write.table(tidy_data, file = "./tidy_data.txt")
+# You should create one R script called run_analysis.R that does the following. #
+## load libraries#
+library(plyr)#
+library(reshape2)#
+#
+activity_labels <- read.table("UCI HAR Dataset/activity_labels.txt", header = FALSE, sep = " ")[,2]#
+features <- read.table("UCI HAR Dataset/features.txt", header = FALSE, sep = " ")[,2]#
+#
+extract_features <- grepl("mean|std", features)#
+#
+test_subject <-read.table("UCI HAR Dataset/test/subject_test.txt", header = FALSE, sep = " ",col.names = "subject")#
+x_test_data <-read.table("UCI HAR Dataset/test/X_test.txt", col.names = features)#
+x_test_data <- x_test_data[,extract_features]#
+y_test_data <-read.table("UCI HAR Dataset/test/Y_test.txt")#
+y_test_data[,2] = activity_labels[y_test_data[,1]]#
+names(y_test_data) = c("Activity_ID", "Activity_Label")#
+test_data <- cbind(as.data.table(test_subject), y_test_data, x_test_data)#
+#
+train_subject <-read.table("UCI HAR Dataset/train/subject_train.txt", header = FALSE, sep = " ",col.names = "subject")#
+x_train_data <-read.table("UCI HAR Dataset/train/x_train.txt", col.names = features)#
+x_train_data <- x_train_data[,extract_features]#
+y_train_data <-read.table("UCI HAR Dataset/train/y_train.txt")#
+y_train_data[,2] = activity_labels[y_train_data[,1]]#
+names(y_train_data) = c("Activity_ID", "Activity_Label")#
+training_data <- cbind(as.data.table(train_subject), y_train_data, x_train_data)#
+data = rbind(test_data, training_data)#
+#
+id_labels = c("subject", "Activity_ID", "labelcode")#
+data_labels = setdiff(colnames(data), id_labels)#
+melt_data = melt(data, id = id_labels, measure.vars = data_labels)#
+tidy_data = dcast(melt_data, subject + labelcode ~ variable, mean)#
+write.table(tidy_data, file = "./tidy_data.txt")
+# You should create one R script called run_analysis.R that does the following. #
+## load libraries#
+library(plyr)#
+library(reshape2)#
+#
+activity_labels <- read.table("UCI HAR Dataset/activity_labels.txt", header = FALSE, sep = " ")[,2]#
+features <- read.table("UCI HAR Dataset/features.txt", header = FALSE, sep = " ")[,2]#
+#
+extract_features <- grepl("mean|std", features)#
+#
+test_subject <-read.table("UCI HAR Dataset/test/subject_test.txt", header = FALSE, sep = " ",col.names = "subject")#
+x_test_data <-read.table("UCI HAR Dataset/test/X_test.txt", col.names = features)#
+x_test_data <- x_test_data[,extract_features]#
+y_test_data <-read.table("UCI HAR Dataset/test/Y_test.txt")#
+y_test_data[,2] = activity_labels[y_test_data[,1]]#
+names(y_test_data) = c("Activity_ID", "Activity_Label")#
+test_data <- cbind(as.data.table(test_subject), y_test_data, x_test_data)#
+#
+train_subject <-read.table("UCI HAR Dataset/train/subject_train.txt", header = FALSE, sep = " ",col.names = "subject")#
+x_train_data <-read.table("UCI HAR Dataset/train/x_train.txt", col.names = features)#
+x_train_data <- x_train_data[,extract_features]#
+y_train_data <-read.table("UCI HAR Dataset/train/y_train.txt")#
+y_train_data[,2] = activity_labels[y_train_data[,1]]#
+names(y_train_data) = c("Activity_ID", "Activity_Label")#
+training_data <- cbind(as.data.table(train_subject), y_train_data, x_train_data)#
+data = rbind(test_data, training_data)#
+#
+id_labels = c("subject", "Activity_ID", "Activity_Label")#
+data_labels = setdiff(colnames(data), id_labels)#
+melt_data = melt(data, id = id_labels, measure.vars = data_labels)#
+tidy_data = dcast(melt_data, subject + Activity_Label ~ variable, mean)#
+write.table(tidy_data, file = "./tidy_data.txt")
+library(plyr)#
+library(reshape2)#
+#
+activity_labels <- read.table("UCI HAR Dataset/activity_labels.txt", header = FALSE, sep = " ")[,2]#
+features <- read.table("UCI HAR Dataset/features.txt", header = FALSE, sep = " ")[,2]#
+#
+extract_features <- grepl("mean|std", features)#
+#
+test_subject <-read.table("UCI HAR Dataset/test/subject_test.txt", header = FALSE, sep = " ",col.names = "subject")#
+x_test_data <-read.table("UCI HAR Dataset/test/X_test.txt", col.names = features)#
+x_test_data <- x_test_data[,extract_features]#
+y_test_data <-read.table("UCI HAR Dataset/test/Y_test.txt")#
+y_test_data[,2] = activity_labels[y_test_data[,1]]#
+names(y_test_data) = c("Activity_ID", "Activity_Label")#
+test_data <- cbind(as.data.table(test_subject), y_test_data, x_test_data)#
+#
+train_subject <-read.table("UCI HAR Dataset/train/subject_train.txt", header = FALSE, sep = " ",col.names = "subject")#
+x_train_data <-read.table("UCI HAR Dataset/train/x_train.txt", col.names = features)#
+x_train_data <- x_train_data[,extract_features]#
+y_train_data <-read.table("UCI HAR Dataset/train/y_train.txt")#
+y_train_data[,2] = activity_labels[y_train_data[,1]]#
+names(y_train_data) = c("Activity_ID", "Activity_Label")#
+training_data <- cbind(as.data.table(train_subject), y_train_data, x_train_data)#
+data = rbind(test_data, training_data)#
+#
+id_labels = c("subject", "Activity_ID", "Activity_Label")#
+data_labels = setdiff(colnames(data), id_labels)#
+melt_data = melt(data, id = id_labels, measure.vars = data_labels)#
+tidy_data = dcast(melt_data, subject + Activity_Label ~ variable, mean)#
+write.table(tidy_data, file = "./tidy_data.txt")
+getwd()
